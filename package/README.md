@@ -26,10 +26,10 @@ import type { AstroIntegration } from 'astro';
 import transitionEventPolyfill from 'astro-transition-event-polyfill';
 
 export default function integration(): AstroIntegration {
-	return {
-		name: 'my-cool-integration',
-		hooks: {
-			'astro:config:setup': ({ updateConfig }) => {
+  return {
+    name: 'my-cool-integration',
+    hooks: {
+      'astro:config:setup': ({ updateConfig }) => {
         updateConfig({
           integrations: [transitionEventPolyfill()],
         });
