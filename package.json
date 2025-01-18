@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "private": true,
+  "main": "index.js",
+  "packageManager": "pnpm@9.15.2",
+  "engines": {
+    "node": "^20.14.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter \"playground\" dev"
+  }
+}

@@ -1,0 +1,7 @@
+packages:
+  - package
+  - playground
+
+catalogs:
+  peers:
+    astro: ^4.5 || ^5.1.0
