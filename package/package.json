@@ -1,6 +1,6 @@
 {
   "name": "astro-transition-event-polyfill",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An integration that adds a polyfill for the astro:page-load event when view transitions are not used.",
   "repository": {
     "type": "git",
