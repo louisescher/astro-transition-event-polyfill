@@ -127,5 +127,5 @@ Scripts is a CLI project that wraps `esbuild` with nice console output. As well 
 
 | Command | Usage |
 | ------- | ----- |
-| `dev` | `pnpm scripts dev '<glob-pattern>' <flags>` |
-| `build` | `pnpm scripts build '<glob-pattern>' <flags>` |
+| `scripts dev` | `pnpm scripts dev '<glob-pattern>' <flags>` |
+| `scripts build` | `pnpm scripts build '<glob-pattern>' <flags>` |
