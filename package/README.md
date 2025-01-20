@@ -86,7 +86,7 @@ export default defineConfig({
 As long as the integration is used, the `astro:page-load` event will be fired on all pages that don't have view transitions enabled.
 
 
-## pre-configured Build/Dev commands
+## Pre-configured Build/Dev commands
 
 **Commands**
 
