@@ -126,6 +126,6 @@ Scripts is a CLI project that wraps `esbuild` with nice console output. As well 
 | `--browser`: Output for `browser` instead of `node` |
 
 | Command | Usage |
-| --------------- |
+| ------- | ----- |
 | `dev` | `pnpm scripts dev '<glob-pattern>' <flags>` |
 | `build` | `pnpm scripts build '<glob-pattern>' <flags>` |
