@@ -84,3 +84,46 @@ export default defineConfig({
 ## Usage / How it works
 
 As long as the integration is used, the `astro:page-load` event will be fired on all pages that don't have view transitions enabled.
+## Pre-configured Build/Dev commands
+
+**Commands**
+
+- **`pnpm dev`** - Runs the playground and starts `esbuild` in development mode.
+  - Runs: `pnpm scripts dev 'src/**/*.ts'`
+- **`pnpm build`** - Runs `esbuild`.
+  - Runs: `pnpm scripts build 'src/**/*.ts'`
+
+## The `scripts/` Folder
+
+Scripts is a CLI project that wraps `esbuild` with a nice console output as well as providing two modes, `build` and `dev`.  Dev mode creates an `esbuild` context and watches for file changes. This creates a scripts command usable if scripts is a workspace dependency.
+
+```log
+> pnpm build
+
+> root@ build /home/native/Documents/Repos/astro-transition-event-polyfill
+> pnpm --filter astro-transition-event-polyfill build
+
+
+> astro-transition-event-polyfill@1.0.0 build /home/native/Documents/Repos/astro-transition-event-polyfill/package
+> pnpm scripts build 'src/**/*.ts' --bundle
+
+[04:09 AM] Cleaning dist directory... (4 files found)
+[04:09 AM] Building... (4 files found)
+[04:09 AM] Generating TypeScript declarations...
+[04:09 AM] √ Generated TypeScript declarations
+[04:09 AM] √ Build Complete
+```
+
+#### Commands and how to use them
+
+| Flags |
+| ----- |
+| `--no-clean-dist`: Do not clean the `dist/` output |
+| `--no-bundle`: Do not bundle the output |
+| `--cjs`: Output in CJS mode |
+| `--browser`: Output for `browser` instead of `node` |
+
+| Command | Usage |
+| ------- | ----- |
+| `scripts dev` | `pnpm scripts dev '<glob-pattern>' <flags>` |
+| `scripts build` | `pnpm scripts build '<glob-pattern>' <flags>` |

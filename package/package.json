@@ -11,6 +11,8 @@
     "url": "https://louisescher.dev"
   },
   "scripts": {
+    "build": "pnpm scripts build 'src/**/*.ts'",
+    "dev": "pnpm scripts dev 'src/**/*.ts'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,12 +21,12 @@
     "view-transitions"
   ],
   "files": [
-    "src"
+    "dist"
   ],
   "license": "MIT",
   "type": "module",
   "exports": {
-    ".": "./src/integration.ts"
+    ".": "./dist/integration.js"
   },
   "peerDependencies": {
     "astro": "catalog:peers"

@@ -1,6 +1,6 @@
 import type { AstroIntegration } from "astro";
-import { createResolver } from "./utils/create-resolver";
-import { viteVirtualModulePluginBuilder } from "./utils/virtual-module-plugin-builder";
+import { createResolver } from "./utils/create-resolver.js";
+import { viteVirtualModulePluginBuilder } from "./utils/virtual-module-plugin-builder.js";
 
 export default function integration(): AstroIntegration {
   const { resolve } = createResolver(import.meta.url);
@@ -8,7 +8,7 @@ export default function integration(): AstroIntegration {
   const polyfill = viteVirtualModulePluginBuilder(
     'ate:polyfill',
     'astro-transition-event-polyfill',
-    `import '${resolve('./polyfill.ts')}';`
+    `import '${resolve('./polyfill.js')}';`
   )
 
   return {
