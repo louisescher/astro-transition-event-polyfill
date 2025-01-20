@@ -1,12 +1,21 @@
 {
   "name": "root",
   "private": true,
-  "main": "index.js",
   "packageManager": "pnpm@9.15.2",
   "engines": {
     "node": "^20.14.0"
   },
   "scripts": {
-    "dev": "pnpm --filter \"playground\" dev"
+    "dev": "pnpm --stream --filter astro-transition-event-polyfill --filter playground -r -parallel dev",
+    "build": "pnpm --filter astro-transition-event-polyfill build",
+    "ci:version": "pnpm changeset version",
+    "ci:publish": "pnpm changeset publish"
+  },
+  "dependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.11",
+    "@changesets/config": "^3.0.5",
+    "typescript": "^5.7.3",
+    "scripts": "workspace:*"
   }
 }

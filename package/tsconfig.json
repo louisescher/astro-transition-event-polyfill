@@ -1,9 +1,21 @@
 {
-  "extends": "astro/tsconfigs/strictest",
+  // "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "strict": true,
+    "moduleResolution": "Node16",
+    "target": "ES2022",
+    "module": "Node16",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "stripInternal": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "baseUrl": ".",
-    "types": ["astro/client"]
+    // "types": ["astro/client"]
   },
   "exclude": ["dist"],
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "types.d.ts"]
 }
