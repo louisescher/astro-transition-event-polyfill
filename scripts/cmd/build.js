@@ -120,6 +120,10 @@ export default async function build(...args) {
 
 	const builder = await esbuild.context({
 		...config,
+		bundle: !noBundle,
+		external: !noBundle
+			? Object.keys({ ...peerDependencies, ...dependencies, ...imports })
+			: undefined,
 		entryPoints,
 		outdir,
 		format,

@@ -11,8 +11,8 @@
     "url": "https://louisescher.dev"
   },
   "scripts": {
-    "build": "pnpm scripts build 'src/**/*.ts'",
-    "dev": "pnpm scripts dev 'src/**/*.ts'",
+    "build": "pnpm scripts build 'src/*.ts' --bundle",
+    "dev": "pnpm scripts dev 'src/*.ts' --bundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
