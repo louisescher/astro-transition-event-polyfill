@@ -118,16 +118,14 @@ Scripts is a CLI project that wraps `esbuild` with nice console output. As well 
 
 #### Commands and how to use them
 
-Flags:
-- `--no-clean-dist`: Do not clean the `dist/` output
-- `--no-bundle`: Do not bundle the output
-- `--cjs`: Output in CJS mode
-- `--browser`: Output for `browser` instead of `node`
+| Flags |
+| ----- |
+| `--no-clean-dist`: Do not clean the `dist/` output |
+| `--no-bundle`: Do not bundle the output |
+| `--cjs`: Output in CJS mode |
+| `--browser`: Output for `browser` instead of `node` |
 
-**`dev`**
-
-- Usage: `pnpm scripts dev '<glob-pattern>' <flags>`
-
-**`build`**
-
-- Usage: `pnpm scripts build '<glob-pattern>' <flags>`
+| Command | Usage |
+| --------------- |
+| `dev` | `pnpm scripts dev '<glob-pattern>' <flags>` |
+| `build` | `pnpm scripts build '<glob-pattern>' <flags>` |
