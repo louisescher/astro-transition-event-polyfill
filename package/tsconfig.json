@@ -1,5 +1,4 @@
 {
-  // "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": true,
@@ -14,7 +13,6 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": ".",
-    // "types": ["astro/client"]
   },
   "exclude": ["dist"],
   "include": ["src/**/*", "types.d.ts"]
