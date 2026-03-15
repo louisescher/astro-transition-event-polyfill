@@ -1,5 +1,11 @@
 # astro-transition-event-polyfill
 
+## 1.2.1
+
+### Patch Changes
+
+- [#5](https://github.com/louisescher/astro-transition-event-polyfill/pull/5) [`9e47a48`](https://github.com/louisescher/astro-transition-event-polyfill/commit/9e47a48f6f636d51dd7c0d6ebc7680764598f680) Thanks [@louisescher](https://github.com/louisescher)! - Fixes the integration files not being included
+
 ## 1.2.0
 
 ### Minor Changes
