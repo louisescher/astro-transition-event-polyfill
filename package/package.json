@@ -32,7 +32,9 @@
 		"astro": "catalog:peers"
 	},
 	"dependencies": {
-		"@types/node": "^24",
 		"pathe": "^2.0.3"
+	},
+	"devDependencies": {
+		"@types/node": "^24"
 	}
 }
