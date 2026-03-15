@@ -1,38 +1,38 @@
 {
-  "name": "astro-transition-event-polyfill",
-  "version": "1.1.0",
-  "description": "An integration that adds a polyfill for the astro:page-load event when view transitions are not used.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/louisescher/astro-transition-event-polyfill"
-  },
-  "author": {
-    "name": "Louis Escher",
-    "url": "https://louisescher.dev"
-  },
-  "scripts": {
-    "build": "pnpm scripts build 'src/**/*.ts'",
-    "dev": "pnpm scripts dev 'src/**/*.ts'",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "astro-integration",
-    "withastro",
-    "view-transitions"
-  ],
-  "files": [
-    "dist"
-  ],
-  "license": "MIT",
-  "type": "module",
-  "exports": {
-    ".": "./dist/integration.js"
-  },
-  "peerDependencies": {
-    "astro": "catalog:peers"
-  },
-  "dependencies": {
-    "@types/node": "^20.14.0",
-    "pathe": "^2.0.2"
-  }
+	"name": "astro-transition-event-polyfill",
+	"version": "1.1.0",
+	"description": "An integration that adds a polyfill for the astro:page-load event when view transitions are not used.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/louisescher/astro-transition-event-polyfill"
+	},
+	"author": {
+		"name": "Louis Escher",
+		"url": "https://louisescher.dev"
+	},
+	"scripts": {
+		"build": "pnpm scripts build 'src/**/*.ts'",
+		"dev": "pnpm scripts dev 'src/**/*.ts'",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"astro-integration",
+		"withastro",
+		"view-transitions"
+	],
+	"files": [
+		"dist"
+	],
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": "./dist/integration.js"
+	},
+	"peerDependencies": {
+		"astro": "catalog:peers"
+	},
+	"dependencies": {
+		"@types/node": "^24",
+		"pathe": "^2.0.3"
+	}
 }
